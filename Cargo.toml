@@ -1,0 +1,119 @@
+[package]
+name = "oop-to-rust-examples"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+authors = ["Enzo Lombardi <enzinol@gmail.com>"]
+description = "Code examples for 'From OOP to Rust'"
+repository = "https://github.com/aovestdipaperino/oop-to-rust"
+
+[dependencies]
+# Async runtime
+tokio = { version = "1.42", features = ["full"] }
+tokio-util = { version = "0.7", features = ["rt"] }
+
+# Error handling
+anyhow = "1.0"
+thiserror = "2.0"
+
+# Concurrency
+crossbeam = "0.8"
+dashmap = "6.1"
+
+# Serialization (for examples)
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+# HTTP client for async examples
+reqwest = { version = "0.12", features = ["json"] }
+
+# Property testing
+proptest = "1.5"
+
+[[bin]]
+name = "chapter02-drop"
+path = "src/chapter02_drop.rs"
+
+[[bin]]
+name = "chapter02-lifetimes"
+path = "src/chapter02_lifetimes.rs"
+
+[[bin]]
+name = "chapter03-enums"
+path = "src/chapter03_enums.rs"
+
+[[bin]]
+name = "chapter03-options"
+path = "src/chapter03_options.rs"
+
+[[bin]]
+name = "chapter04-traits"
+path = "src/chapter04_traits.rs"
+
+[[bin]]
+name = "chapter06-errors"
+path = "src/chapter06_errors.rs"
+
+[[bin]]
+name = "chapter09-builder"
+path = "src/chapter09_builder.rs"
+
+[[bin]]
+name = "chapter09-factory"
+path = "src/chapter09_factory.rs"
+
+[[bin]]
+name = "chapter10-decorator"
+path = "src/chapter10_decorator.rs"
+
+[[bin]]
+name = "chapter10-composite"
+path = "src/chapter10_composite.rs"
+
+[[bin]]
+name = "chapter11-strategy"
+path = "src/chapter11_strategy.rs"
+
+[[bin]]
+name = "chapter11-state"
+path = "src/chapter11_state.rs"
+
+[[bin]]
+name = "chapter11-command"
+path = "src/chapter11_command.rs"
+
+[[bin]]
+name = "chapter13-shared-state"
+path = "src/chapter13_shared_state.rs"
+
+[[bin]]
+name = "chapter13-cache"
+path = "src/chapter13_cache.rs"
+
+[[bin]]
+name = "chapter14-channels"
+path = "src/chapter14_channels.rs"
+
+[[bin]]
+name = "chapter14-pipeline"
+path = "src/chapter14_pipeline.rs"
+
+[[bin]]
+name = "chapter14-actor"
+path = "src/chapter14_actor.rs"
+
+[[bin]]
+name = "chapter15-async-basics"
+path = "src/chapter15_async_basics.rs"
+
+[[bin]]
+name = "chapter16-cancellation"
+path = "src/chapter16_cancellation.rs"
+
+[[bin]]
+name = "chapter17-atomics"
+path = "src/chapter17_atomics.rs"
+
+[[bin]]
+name = "chapter17-work-stealing"
+path = "src/chapter17_work_stealing.rs"
