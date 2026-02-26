@@ -1,6 +1,6 @@
 # From OOP to Rust -- Companion Code
 
-This repository contains all runnable code examples from the book [**From OOP to Rust**](https://github.com/aovestdipaperino/oop-to-rust), a guide for experienced object-oriented developers making the transition to Rust.
+This repository contains all runnable code examples from the book [**From OOP to Rust**](https://www.amazon.com/OOP-Rust-developers-think-objects-ebook/dp/B0G5PPMDMV), a guide for experienced object-oriented developers making the transition to Rust.
 
 Each example is a self-contained binary you can run independently. No need to hunt through a monorepo or stitch files together; pick a chapter, run it, and read the output alongside the book.
 
